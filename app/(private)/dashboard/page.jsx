@@ -13,7 +13,7 @@ import { BarLoader } from 'react-spinners';
 import { getLatestUpdates } from '@/actions/dashboard';
 import { format } from 'date-fns';
 
-const page = () => {
+export default function DashboardPage() {
   
   const {isLoaded, user} = useUser();
 
@@ -103,5 +103,3 @@ const page = () => {
     </div>
   )
 }
-
-export default page
